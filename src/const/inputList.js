@@ -1,0 +1,62 @@
+export const inputList = [
+  {
+    formElement: "input",
+    nameEl: "name",
+    idEl: "name",
+    typeInput: "text",
+    nameLabel: "Имя",
+  },
+  {
+    formElement: "input",
+    nameEl: "email",
+    idEl: "email",
+    typeInput: "email",
+    nameLabel: "Email",
+  },
+  {
+    formElement: "textarea",
+    nameEl: "body_subject",
+    idEl: "body_subject",
+    nameLabel: "Сообщение",
+  },
+  {
+    formElement: "select",
+    nameEl: "subject",
+    idEl: "subject",
+    nameLabel: "Тип обращения",
+    options: {
+      "Жалоба на пользователя": "Жалоба на пользователя",
+      "Жалоба на приложение": "Жалоба на приложение",
+      "Жалоба на сайт": "Жалоба на сайт",
+      Оплата: "Оплата",
+      Функционал: "Функционал",
+      Авторизация: "Авторизация",
+      Модерация: "Модерация",
+      Другое: "Другое",
+    },
+  },
+  {
+    formElement: "select",
+    nameEl: "priority",
+    idEl: "priority",
+    nameLabel: "Приоритет",
+    options: {
+      0: "Низкий",
+      1: "Средний",
+      2: "Высокий",
+      3: "Критический",
+    },
+  },
+  {
+    formElement: "select",
+    nameEl: "status",
+    idEl: "status",
+    nameLabel: "Статус",
+    options: {
+      0: "Новый",
+      1: "В обработке",
+      2: "Отложено",
+      3: "Закрыто",
+    },
+  },
+];
