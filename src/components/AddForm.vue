@@ -80,24 +80,12 @@ export default {
 
       this.dataTiket.ticket_number = this.$store.getters.ticketNumber;
 
-      const newTiket = Object.assign({}, this.dataTiket);
-
-      this.$store.commit("addTiket", newTiket);
+      this.$store.commit(
+        "addTiket",
+        JSON.parse(JSON.stringify(this.dataTiket))
+      );
 
       this.setDefaultValueForm = !this.setDefaultValueForm;
-
-      this.dataTiket = {
-        user: {
-          name: "",
-          email: "",
-        },
-        body_subject: "",
-        subject: "",
-        status: 0,
-        priority: 2,
-        ticket_number: 0,
-        date_added: null,
-      };
     },
     addDataUser(data) {
       data.name || data.email
